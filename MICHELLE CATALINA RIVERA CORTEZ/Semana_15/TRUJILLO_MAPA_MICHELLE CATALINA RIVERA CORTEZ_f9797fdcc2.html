@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f327ac87b1daeb4f54161fd4e934f041 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+                <div style="
+                    position: fixed;
+                    top: 20px;
+                    right: 20px;
+                    z-index: 9999;
+                    background: white;
+                    padding: 10px 14px;
+                    border-radius: 8px;
+                    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+                    font-size: 13px;
+                ">
+                    <b>Resumen de Ruta</b><br>
+                    Total clientes: 27<br>
+                    <span style="color: orange;"><b>Por graduar:</b> 0</span>
+                </div>
+                
+    
+            <div class="folium-map" id="map_f327ac87b1daeb4f54161fd4e934f041" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f327ac87b1daeb4f54161fd4e934f041 = L.map(
+                "map_f327ac87b1daeb4f54161fd4e934f041",
+                {
+                    center: [-8.100042, -79.0194473],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9d452738f2605f0831abb6fa814421aa = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "\u00a9 OpenStreetMap contributors \u00a9 CARTO",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9d452738f2605f0831abb6fa814421aa.addTo(map_f327ac87b1daeb4f54161fd4e934f041);
+        
+    
+            var marker_c8f6ac9b33adbcbc8f3b32fd20300f77 = L.marker(
+                [-8.100042, -79.0194473],
+                {
+}
+            ).addTo(map_f327ac87b1daeb4f54161fd4e934f041);
+        
+    
+            var icon_b94b61841a5e710738d3c584c9811b51 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_97883f581215b30ae9eb307972fbac51 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_2b35c43803351863c35aac4e66a671c5 = $(`<div id="html_2b35c43803351863c35aac4e66a671c5" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001174616<br>                             <b>Nombre:</b> QUISPE DE CERNA FRANCISCA SACRAMENTO<br>                             <b>Dirección:</b> AV. EJERCITO(KIOSKO) NRO. 929 URB. EL MOLINO La Libertad-Trujillo-Trujillo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_97883f581215b30ae9eb307972fbac51.setContent(html_2b35c43803351863c35aac4e66a671c5);
+            
+        
+
+        marker_c8f6ac9b33adbcbc8f3b32fd20300f77.bindPopup(popup_97883f581215b30ae9eb307972fbac51)
+        ;
+
+        
+    
+    
+                marker_c8f6ac9b33adbcbc8f3b32fd20300f77.setIcon(icon_b94b61841a5e710738d3c584c9811b51);
+            
+    
+            var marker_d7f08f75ecee1114333e2a6fba678ed8 = L.marker(
+                [-8.0994018, -79.0200885],
+                {
+}
+            ).addTo(map_f327ac87b1daeb4f54161fd4e934f041);
+        
+    
+            var icon_2420e4f6ca5a619d686e043210bd6874 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2c1342109c7aeb6ea5214c64b1a1afdb = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_42ac91053c5032861e6d6a182b5738fe = $(`<div id="html_42ac91053c5032861e6d6a182b5738fe" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C004168493<br>                             <b>Nombre:</b> MADALENGOITIA GAONA SILVIA VICTORIA<br>                             <b>Dirección:</b> CORONEL GOMEZ # 213 , EL MOLINO<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_2c1342109c7aeb6ea5214c64b1a1afdb.setContent(html_42ac91053c5032861e6d6a182b5738fe);
+            
+        
+
+        marker_d7f08f75ecee1114333e2a6fba678ed8.bindPopup(popup_2c1342109c7aeb6ea5214c64b1a1afdb)
+        ;
+
+        
+    
+    
+                marker_d7f08f75ecee1114333e2a6fba678ed8.setIcon(icon_2420e4f6ca5a619d686e043210bd6874);
+            
+    
+            var marker_3ba405477e8e2f250c91edabd36722c5 = L.marker(
+                [-8.0967718, -79.0215532],
+                {
+}
+            ).addTo(map_f327ac87b1daeb4f54161fd4e934f041);
+        
+    
+            var icon_006c4e11df80f4f91fed6905131f8a9b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_64b483ff7c49b0507252b8598e4993aa = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_6d291d4c58e46c4a951e30d3a6169b70 = $(`<div id="html_6d291d4c58e46c4a951e30d3a6169b70" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001728454<br>                             <b>Nombre:</b> HARO DOMINGUEZ ELEUTERIO<br>                             <b>Dirección:</b> AV. CARBONERA NRO. 1156 URB. LOS JARDINES La Libertad-Trujillo-Trujillo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_64b483ff7c49b0507252b8598e4993aa.setContent(html_6d291d4c58e46c4a951e30d3a6169b70);
+            
+        
+
+        marker_3ba405477e8e2f250c91edabd36722c5.bindPopup(popup_64b483ff7c49b0507252b8598e4993aa)
+        ;
+
+        
+    
+    
+                marker_3ba405477e8e2f250c91edabd36722c5.setIcon(icon_006c4e11df80f4f91fed6905131f8a9b);
+            
+    
+            var marker_131266c56ac7fa62aa56fb0078cb62c2 = L.marker(
+                [-8.0973254, -79.0255189],
+                {
+}
+            ).addTo(map_f327ac87b1daeb4f54161fd4e934f041);
+        
+    
+            var icon_ea65e0f2019ffc04d7e9b715089354a2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a988559da06cab5d5edb206fb76b1987 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_6c1853c22750e818d578b667b00303e9 = $(`<div id="html_6c1853c22750e818d578b667b00303e9" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C004163711<br>                             <b>Nombre:</b> FLORES MARQUEZ EULOGIO WALDIN<br>                             <b>Dirección:</b> CALLE PEDRO UREÑA # 1125 LAS QUINTANAS<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_a988559da06cab5d5edb206fb76b1987.setContent(html_6c1853c22750e818d578b667b00303e9);
+            
+        
+
+        marker_131266c56ac7fa62aa56fb0078cb62c2.bindPopup(popup_a988559da06cab5d5edb206fb76b1987)
+        ;
+
+        
+    
+    
+                marker_131266c56ac7fa62aa56fb0078cb62c2.setIcon(icon_ea65e0f2019ffc04d7e9b715089354a2);
+            
+    
+            var marker_43b81fb3055219dc676253042f1f94b7 = L.marker(
+                [-8.0930521, -79.0251658],
+                {
+}
+            ).addTo(map_f327ac87b1daeb4f54161fd4e934f041);
+        
+    
+            var icon_04dd594797943e6bbc65621a0348339c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_791b2005a74d4cf8deba2fa37b03035c = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_317c14d6a9353c6b1e0c75a42113170f = $(`<div id="html_317c14d6a9353c6b1e0c75a42113170f" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C004153519<br>                             <b>Nombre:</b> HUAMAN FASABI REY ARTURO<br>                             <b>Dirección:</b> MERCADO LA HERMELINDA , PTO.B4 1ER NIVEL<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_791b2005a74d4cf8deba2fa37b03035c.setContent(html_317c14d6a9353c6b1e0c75a42113170f);
+            
+        
+
+        marker_43b81fb3055219dc676253042f1f94b7.bindPopup(popup_791b2005a74d4cf8deba2fa37b03035c)
+        ;
+
+        
+    
+    
+                marker_43b81fb3055219dc676253042f1f94b7.setIcon(icon_04dd594797943e6bbc65621a0348339c);
+            
+    
+            var marker_997bf078a007147e07523827bd4ee1f5 = L.marker(
+                [-8.0928835, -79.0249268],
+                {
+}
+            ).addTo(map_f327ac87b1daeb4f54161fd4e934f041);
+        
+    
+            var icon_a6e061a6374cbe354ecb3078225b1af8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f518476cad52daa8c16ae5b4e8aa3156 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_6c235e319302f3743f41e6faf025388c = $(`<div id="html_6c235e319302f3743f41e6faf025388c" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001179465<br>                             <b>Nombre:</b> SANDOVAL AVILA ASUNCIONA NICOLAZA<br>                             <b>Dirección:</b> MDOLA HERMELINDA , PTO C, LO URB. LA HERMELINDA La Libertad-Trujillo-Trujillo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_f518476cad52daa8c16ae5b4e8aa3156.setContent(html_6c235e319302f3743f41e6faf025388c);
+            
+        
+
+        marker_997bf078a007147e07523827bd4ee1f5.bindPopup(popup_f518476cad52daa8c16ae5b4e8aa3156)
+        ;
+
+        
+    
+    
+                marker_997bf078a007147e07523827bd4ee1f5.setIcon(icon_a6e061a6374cbe354ecb3078225b1af8);
+            
+    
+            var marker_49fef2513d5eb474eb03a4d82757666c = L.marker(
+                [-8.0926266, -79.0258085],
+                {
+}
+            ).addTo(map_f327ac87b1daeb4f54161fd4e934f041);
+        
+    
+            var icon_e8c9c22d81f7786044ce29e7c9647be3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6b85606c16079f9f485e9a00f84d0ea4 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_74b72ccf8f09a72d57e4880d1885a6b5 = $(`<div id="html_74b72ccf8f09a72d57e4880d1885a6b5" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001706796<br>                             <b>Nombre:</b> DELGADO RODRIGUEZ MARLON BRANDON<br>                             <b>Dirección:</b> MCDO. LA HERMELINDA , PTO A NRO. 35 URB. LA HERMELINDA La Libertad-Trujillo-Trujillo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_6b85606c16079f9f485e9a00f84d0ea4.setContent(html_74b72ccf8f09a72d57e4880d1885a6b5);
+            
+        
+
+        marker_49fef2513d5eb474eb03a4d82757666c.bindPopup(popup_6b85606c16079f9f485e9a00f84d0ea4)
+        ;
+
+        
+    
+    
+                marker_49fef2513d5eb474eb03a4d82757666c.setIcon(icon_e8c9c22d81f7786044ce29e7c9647be3);
+            
+    
+            var marker_4152411c10a736318913fb42a9633d37 = L.marker(
+                [-8.0924145, -79.0259289],
+                {
+}
+            ).addTo(map_f327ac87b1daeb4f54161fd4e934f041);
+        
+    
+            var icon_57abfa7871b8f89b1b700e259a035af4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4cd1b03b7bcf353b4c66bf55e0008ad0 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_23f8d286bf62c6e6192a3c01c6e21d4b = $(`<div id="html_23f8d286bf62c6e6192a3c01c6e21d4b" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001130079<br>                             <b>Nombre:</b> CHAVEZ VASQUEZ SEGUNDO DANILO<br>                             <b>Dirección:</b> MCDO. LA HERMELINDA PTO B- NRO. 42 URB. LA HERMELINDA La Libertad-Trujillo-Trujillo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_4cd1b03b7bcf353b4c66bf55e0008ad0.setContent(html_23f8d286bf62c6e6192a3c01c6e21d4b);
+            
+        
+
+        marker_4152411c10a736318913fb42a9633d37.bindPopup(popup_4cd1b03b7bcf353b4c66bf55e0008ad0)
+        ;
+
+        
+    
+    
+                marker_4152411c10a736318913fb42a9633d37.setIcon(icon_57abfa7871b8f89b1b700e259a035af4);
+            
+    
+            var marker_cc6208c0edafb32997941832178cfc3d = L.marker(
+                [-8.091899, -79.0258478],
+                {
+}
+            ).addTo(map_f327ac87b1daeb4f54161fd4e934f041);
+        
+    
+            var icon_fecf13105b9464681f4ae24374248aee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6729dad79f224570c8d6a51e0913cdc2 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_d8fb3432b6ffd4dfb2ac3e58621ad453 = $(`<div id="html_d8fb3432b6ffd4dfb2ac3e58621ad453" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001667378<br>                             <b>Nombre:</b> CERNA TACANGA GLADIS AMELIA<br>                             <b>Dirección:</b> MCDO. MCDOLA HERMELINDA , PTOB- NRO. 18 URB. LA HERMELINDA La Libertad-Trujillo-Trujillo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_6729dad79f224570c8d6a51e0913cdc2.setContent(html_d8fb3432b6ffd4dfb2ac3e58621ad453);
+            
+        
+
+        marker_cc6208c0edafb32997941832178cfc3d.bindPopup(popup_6729dad79f224570c8d6a51e0913cdc2)
+        ;
+
+        
+    
+    
+                marker_cc6208c0edafb32997941832178cfc3d.setIcon(icon_fecf13105b9464681f4ae24374248aee);
+            
+    
+            var marker_0b68366139a3bddea840a4494365f6be = L.marker(
+                [-8.0914704, -79.0261364],
+                {
+}
+            ).addTo(map_f327ac87b1daeb4f54161fd4e934f041);
+        
+    
+            var icon_b5c2139855772ee86c2f48efc3cd3969 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7dde7ab8dfd21b6749a261dc6bf0d846 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_3ce59a2de6c5e4df3a921caeb785195d = $(`<div id="html_3ce59a2de6c5e4df3a921caeb785195d" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001389878<br>                             <b>Nombre:</b> GOMEZ AVILA JENNY ELDA<br>                             <b>Dirección:</b> MCDO. MDO LA HERMELINDA , PTO B , NRO. 120 URB. MDO LA HERMELINDA La Libertad-Trujillo-Trujillo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_7dde7ab8dfd21b6749a261dc6bf0d846.setContent(html_3ce59a2de6c5e4df3a921caeb785195d);
+            
+        
+
+        marker_0b68366139a3bddea840a4494365f6be.bindPopup(popup_7dde7ab8dfd21b6749a261dc6bf0d846)
+        ;
+
+        
+    
+    
+                marker_0b68366139a3bddea840a4494365f6be.setIcon(icon_b5c2139855772ee86c2f48efc3cd3969);
+            
+    
+            var marker_b08c9987d51249113fdcfd36240e41cd = L.marker(
+                [-8.0914694, -79.0262025],
+                {
+}
+            ).addTo(map_f327ac87b1daeb4f54161fd4e934f041);
+        
+    
+            var icon_4d090c417370b796e4cba0f6f9ec3e8f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_242ef43e62ee435c3f3ae20bcf2c2082 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_0de44e13e7adb49007598137f617e7fe = $(`<div id="html_0de44e13e7adb49007598137f617e7fe" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001388905<br>                             <b>Nombre:</b> RODRIGUEZ FABIAN CLAUDINA<br>                             <b>Dirección:</b> MCDO. MDO HERMELINDA , PTO A(PAB NRO. 55 URB. MDO HERMELINDA La Libertad-Trujillo-Trujillo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_242ef43e62ee435c3f3ae20bcf2c2082.setContent(html_0de44e13e7adb49007598137f617e7fe);
+            
+        
+
+        marker_b08c9987d51249113fdcfd36240e41cd.bindPopup(popup_242ef43e62ee435c3f3ae20bcf2c2082)
+        ;
+
+        
+    
+    
+                marker_b08c9987d51249113fdcfd36240e41cd.setIcon(icon_4d090c417370b796e4cba0f6f9ec3e8f);
+            
+    
+            var marker_ff970d22e242cce8fb65eae04618d640 = L.marker(
+                [-8.0913725, -79.0256912],
+                {
+}
+            ).addTo(map_f327ac87b1daeb4f54161fd4e934f041);
+        
+    
+            var icon_e527bb4d8ef523153b41d2312f36d08a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ad139bafe4304a345bdad3003eb1a50c = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_c49f95cba0eecb791d0e0d149dd7cb40 = $(`<div id="html_c49f95cba0eecb791d0e0d149dd7cb40" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C004063515<br>                             <b>Nombre:</b> BAZAN RODRIGUEZ YOLI ELVIRA<br>                             <b>Dirección:</b> MRDO. LA HERMELINDA PTO 140 - TRUJILLO<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_ad139bafe4304a345bdad3003eb1a50c.setContent(html_c49f95cba0eecb791d0e0d149dd7cb40);
+            
+        
+
+        marker_ff970d22e242cce8fb65eae04618d640.bindPopup(popup_ad139bafe4304a345bdad3003eb1a50c)
+        ;
+
+        
+    
+    
+                marker_ff970d22e242cce8fb65eae04618d640.setIcon(icon_e527bb4d8ef523153b41d2312f36d08a);
+            
+    
+            var marker_629b175e1bf82729bedfbb23f461852b = L.marker(
+                [-8.0910386, -79.0258431],
+                {
+}
+            ).addTo(map_f327ac87b1daeb4f54161fd4e934f041);
+        
+    
+            var icon_4d6c1ce90594599bde331b068ef02b86 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_44ee4a6c1cf7c7570d508ea39124a176 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_f0137ce11169ed8c6b7ed7bc485d138a = $(`<div id="html_f0137ce11169ed8c6b7ed7bc485d138a" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001535789<br>                             <b>Nombre:</b> GUEVARA PARIAJULCA ESTHER BACELISA<br>                             <b>Dirección:</b> MCDO. MDOLA HERMELINDA , PTO NRO. 161 URB. LA HERMELINDA La Libertad-Trujillo-Trujillo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_44ee4a6c1cf7c7570d508ea39124a176.setContent(html_f0137ce11169ed8c6b7ed7bc485d138a);
+            
+        
+
+        marker_629b175e1bf82729bedfbb23f461852b.bindPopup(popup_44ee4a6c1cf7c7570d508ea39124a176)
+        ;
+
+        
+    
+    
+                marker_629b175e1bf82729bedfbb23f461852b.setIcon(icon_4d6c1ce90594599bde331b068ef02b86);
+            
+    
+            var marker_e56d14d744adae907d01523bfdd49a9c = L.marker(
+                [-8.0909051, -79.0256479],
+                {
+}
+            ).addTo(map_f327ac87b1daeb4f54161fd4e934f041);
+        
+    
+            var icon_973da884164542fd2d71c3601c9f39ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e60425a0ee9d58b453cb5ba26ae7982b = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_e4ff1dd2737652a0e9349db5bc9f7c5b = $(`<div id="html_e4ff1dd2737652a0e9349db5bc9f7c5b" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001678144<br>                             <b>Nombre:</b> VENTURA ORBEGOSO MERLIN NERY<br>                             <b>Dirección:</b> MCDO. MCDOLA HERMELINDA , PTO NRO. 215 URB. LA HERMELINDA La Libertad-Trujillo-Trujillo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_e60425a0ee9d58b453cb5ba26ae7982b.setContent(html_e4ff1dd2737652a0e9349db5bc9f7c5b);
+            
+        
+
+        marker_e56d14d744adae907d01523bfdd49a9c.bindPopup(popup_e60425a0ee9d58b453cb5ba26ae7982b)
+        ;
+
+        
+    
+    
+                marker_e56d14d744adae907d01523bfdd49a9c.setIcon(icon_973da884164542fd2d71c3601c9f39ef);
+            
+    
+            var marker_3d601d09c1ab17e0eb6df88d88f01b88 = L.marker(
+                [-8.0903434, -79.0251534],
+                {
+}
+            ).addTo(map_f327ac87b1daeb4f54161fd4e934f041);
+        
+    
+            var icon_a6fceda24c214433888f8626fc6192c1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1d6f5abf9fa69bf36b3a6535b79b5279 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_9c126fe3d838a72fff23b4083afb4196 = $(`<div id="html_9c126fe3d838a72fff23b4083afb4196" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001568838<br>                             <b>Nombre:</b> RUBIO SEPULVEDA NANCY JANETH<br>                             <b>Dirección:</b> MCDO. MDOLA HERMELINDA , PTO A NRO. 5 URB. LA HERMELINDA La Libertad-Trujillo-Trujillo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_1d6f5abf9fa69bf36b3a6535b79b5279.setContent(html_9c126fe3d838a72fff23b4083afb4196);
+            
+        
+
+        marker_3d601d09c1ab17e0eb6df88d88f01b88.bindPopup(popup_1d6f5abf9fa69bf36b3a6535b79b5279)
+        ;
+
+        
+    
+    
+                marker_3d601d09c1ab17e0eb6df88d88f01b88.setIcon(icon_a6fceda24c214433888f8626fc6192c1);
+            
+    
+            var marker_a7d79347225d45f685e8c83cbb67f017 = L.marker(
+                [-8.0958951, -79.0170202],
+                {
+}
+            ).addTo(map_f327ac87b1daeb4f54161fd4e934f041);
+        
+    
+            var icon_c59e2df97022968a2e6a0985d102536a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_30507714c64e078a1bf4dfbd86b648a4 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_54cea9fff28ea80dfc1b2385eaac9d6d = $(`<div id="html_54cea9fff28ea80dfc1b2385eaac9d6d" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001165403<br>                             <b>Nombre:</b> VALLE VARGAS BRENDA JAKELINE<br>                             <b>Dirección:</b> CL. GUILLERMO MARCONI NRO. 662 URB. PAY PAY La Libertad-Trujillo-Trujillo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_30507714c64e078a1bf4dfbd86b648a4.setContent(html_54cea9fff28ea80dfc1b2385eaac9d6d);
+            
+        
+
+        marker_a7d79347225d45f685e8c83cbb67f017.bindPopup(popup_30507714c64e078a1bf4dfbd86b648a4)
+        ;
+
+        
+    
+    
+                marker_a7d79347225d45f685e8c83cbb67f017.setIcon(icon_c59e2df97022968a2e6a0985d102536a);
+            
+    
+            var marker_b50b9e30f9d1628cd4232c770cf86dec = L.marker(
+                [-8.096401, -79.0138217],
+                {
+}
+            ).addTo(map_f327ac87b1daeb4f54161fd4e934f041);
+        
+    
+            var icon_a0cbb9f3e72303355a8cc460791d26f9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8248c141d9f53a138b29950bf43b7eba = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_b15996ebe5ab38a613ad811ea7b81d40 = $(`<div id="html_b15996ebe5ab38a613ad811ea7b81d40" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001392913<br>                             <b>Nombre:</b> LOYOLA LINARES MONICA TERESA<br>                             <b>Dirección:</b> AV. ARQUIMEDES NRO. 275 MZA. B65 URB. DANIEL HOYLE La Libertad-Trujillo-Trujillo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_8248c141d9f53a138b29950bf43b7eba.setContent(html_b15996ebe5ab38a613ad811ea7b81d40);
+            
+        
+
+        marker_b50b9e30f9d1628cd4232c770cf86dec.bindPopup(popup_8248c141d9f53a138b29950bf43b7eba)
+        ;
+
+        
+    
+    
+                marker_b50b9e30f9d1628cd4232c770cf86dec.setIcon(icon_a0cbb9f3e72303355a8cc460791d26f9);
+            
+    
+            var marker_66d90481568d6672b3ac334c30cc3537 = L.marker(
+                [-8.0962868, -79.0131059],
+                {
+}
+            ).addTo(map_f327ac87b1daeb4f54161fd4e934f041);
+        
+    
+            var icon_9b1f9508ce5409485e52b36018893f00 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fb3578a64d32fe1e342ad27f3d2b36e0 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_dc335684ec640c6bba60e3f36b826c10 = $(`<div id="html_dc335684ec640c6bba60e3f36b826c10" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001751428<br>                             <b>Nombre:</b> SALIRROSAS VILLACORTA MARIA YNES<br>                             <b>Dirección:</b> CL. ALBERT EINSTEIN NRO. 299 URB. DANIEL HOYLE La Libertad-Trujillo-Trujillo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_fb3578a64d32fe1e342ad27f3d2b36e0.setContent(html_dc335684ec640c6bba60e3f36b826c10);
+            
+        
+
+        marker_66d90481568d6672b3ac334c30cc3537.bindPopup(popup_fb3578a64d32fe1e342ad27f3d2b36e0)
+        ;
+
+        
+    
+    
+                marker_66d90481568d6672b3ac334c30cc3537.setIcon(icon_9b1f9508ce5409485e52b36018893f00);
+            
+    
+            var marker_1f4fd85bf4070f6dde7058810d3da3a3 = L.marker(
+                [-8.0953322, -79.0125614],
+                {
+}
+            ).addTo(map_f327ac87b1daeb4f54161fd4e934f041);
+        
+    
+            var icon_4c9b2f17c68a6212a5fd734e78bf0db1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_75461eb13cdd6bf639765d48c4c939d7 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_1f788773a645dfc34f6753d568c87a10 = $(`<div id="html_1f788773a645dfc34f6753d568c87a10" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C004054395<br>                             <b>Nombre:</b> VEGA AGUILAR IRIS ANA<br>                             <b>Dirección:</b> JULIO CESAR TELLO 110 - URB GRANADOS<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_75461eb13cdd6bf639765d48c4c939d7.setContent(html_1f788773a645dfc34f6753d568c87a10);
+            
+        
+
+        marker_1f4fd85bf4070f6dde7058810d3da3a3.bindPopup(popup_75461eb13cdd6bf639765d48c4c939d7)
+        ;
+
+        
+    
+    
+                marker_1f4fd85bf4070f6dde7058810d3da3a3.setIcon(icon_4c9b2f17c68a6212a5fd734e78bf0db1);
+            
+    
+            var marker_63d3309c0a1b054db4af7e6ab1ef3413 = L.marker(
+                [-8.0930043, -79.0111576],
+                {
+}
+            ).addTo(map_f327ac87b1daeb4f54161fd4e934f041);
+        
+    
+            var icon_17a1f75767a325293a4197e030960886 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9bbb9da6a981cb0f45bf38d1932d5d42 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_da86f1ac41e9834cdd2ec86890978448 = $(`<div id="html_da86f1ac41e9834cdd2ec86890978448" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C004184441<br>                             <b>Nombre:</b> AVALOS CABRERA MERCEDES PAULINA<br>                             <b>Dirección:</b> CALLE HIPOLITO UNANUE NRO. 301, LOS GRANADOS<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_9bbb9da6a981cb0f45bf38d1932d5d42.setContent(html_da86f1ac41e9834cdd2ec86890978448);
+            
+        
+
+        marker_63d3309c0a1b054db4af7e6ab1ef3413.bindPopup(popup_9bbb9da6a981cb0f45bf38d1932d5d42)
+        ;
+
+        
+    
+    
+                marker_63d3309c0a1b054db4af7e6ab1ef3413.setIcon(icon_17a1f75767a325293a4197e030960886);
+            
+    
+            var marker_1e7557707bec63c02883c0c6ef5cb612 = L.marker(
+                [-8.0921117, -79.0122932],
+                {
+}
+            ).addTo(map_f327ac87b1daeb4f54161fd4e934f041);
+        
+    
+            var icon_a59f8a3b8d2a79bc62e8405f9b0611d6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_168d31034e553efe7e20327700557331 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_82020a5dae2e9170a3dde0366ed71198 = $(`<div id="html_82020a5dae2e9170a3dde0366ed71198" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001126840<br>                             <b>Nombre:</b> VARGAS LOPEZ AIDEE CELMIRA<br>                             <b>Dirección:</b> MCDO GRAN CHI-MAR P-B9 URB. GRANADOS La Libertad-Trujillo-Trujillo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_168d31034e553efe7e20327700557331.setContent(html_82020a5dae2e9170a3dde0366ed71198);
+            
+        
+
+        marker_1e7557707bec63c02883c0c6ef5cb612.bindPopup(popup_168d31034e553efe7e20327700557331)
+        ;
+
+        
+    
+    
+                marker_1e7557707bec63c02883c0c6ef5cb612.setIcon(icon_a59f8a3b8d2a79bc62e8405f9b0611d6);
+            
+    
+            var marker_218f01bb3af6fdb02cf7f3697b411527 = L.marker(
+                [-8.0920935, -79.0123495],
+                {
+}
+            ).addTo(map_f327ac87b1daeb4f54161fd4e934f041);
+        
+    
+            var icon_39bba2a3b1f656ce3b1b5178d56812e1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_504b7f2a29ae9792c67ea5ddcc7b1b0f = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_2554047f1e91e2b59b4c23612197d95b = $(`<div id="html_2554047f1e91e2b59b4c23612197d95b" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001705857<br>                             <b>Nombre:</b> VALDIVIEZO RODRIGUEZ DORIS MARILU<br>                             <b>Dirección:</b> MCDO. MDOCHIMAR , PTO NRO. 39 URB. LOS GRANADOS La Libertad-Trujillo-Trujillo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_504b7f2a29ae9792c67ea5ddcc7b1b0f.setContent(html_2554047f1e91e2b59b4c23612197d95b);
+            
+        
+
+        marker_218f01bb3af6fdb02cf7f3697b411527.bindPopup(popup_504b7f2a29ae9792c67ea5ddcc7b1b0f)
+        ;
+
+        
+    
+    
+                marker_218f01bb3af6fdb02cf7f3697b411527.setIcon(icon_39bba2a3b1f656ce3b1b5178d56812e1);
+            
+    
+            var marker_a5f4ec149aaa8d4dc65fd0ceefbe01d6 = L.marker(
+                [-8.091638, -79.011653],
+                {
+}
+            ).addTo(map_f327ac87b1daeb4f54161fd4e934f041);
+        
+    
+            var icon_f926e1fad7f5115ccd9c5f7ec0b23952 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8ebea14eccc12d3b9c2134dac8fd66d6 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_0e239048ba9e3fe56b4f81b7cb7fd433 = $(`<div id="html_0e239048ba9e3fe56b4f81b7cb7fd433" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C004166406<br>                             <b>Nombre:</b> MONZON VELASQUEZ CARLOS ENRIQUE<br>                             <b>Dirección:</b> CARLOS SEBASTIAN BARRANCA 431 URB. CHIMU<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_8ebea14eccc12d3b9c2134dac8fd66d6.setContent(html_0e239048ba9e3fe56b4f81b7cb7fd433);
+            
+        
+
+        marker_a5f4ec149aaa8d4dc65fd0ceefbe01d6.bindPopup(popup_8ebea14eccc12d3b9c2134dac8fd66d6)
+        ;
+
+        
+    
+    
+                marker_a5f4ec149aaa8d4dc65fd0ceefbe01d6.setIcon(icon_f926e1fad7f5115ccd9c5f7ec0b23952);
+            
+    
+            var marker_6417966fb6775f1b76e25377eb465cb6 = L.marker(
+                [-8.09092, -79.0147269],
+                {
+}
+            ).addTo(map_f327ac87b1daeb4f54161fd4e934f041);
+        
+    
+            var icon_6b3799aa7481ca71ad91c1f3e3b2649e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9e0eb2879d5b131b414cf7c9797b0089 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_33e3e35d5044f6e99d3b2570b47a5bab = $(`<div id="html_33e3e35d5044f6e99d3b2570b47a5bab" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001764862<br>                             <b>Nombre:</b> GUTIERREZ RAMIREZ EDDY LEONOR<br>                             <b>Dirección:</b> AV. MZA L , LOTE NRO. 30 URB. SANTA TERESA DE AVILA La Libertad-Trujillo-Trujillo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_9e0eb2879d5b131b414cf7c9797b0089.setContent(html_33e3e35d5044f6e99d3b2570b47a5bab);
+            
+        
+
+        marker_6417966fb6775f1b76e25377eb465cb6.bindPopup(popup_9e0eb2879d5b131b414cf7c9797b0089)
+        ;
+
+        
+    
+    
+                marker_6417966fb6775f1b76e25377eb465cb6.setIcon(icon_6b3799aa7481ca71ad91c1f3e3b2649e);
+            
+    
+            var marker_0c0f36c6a5c00cdca19575885e2a4b2f = L.marker(
+                [-8.0904646, -79.0149241],
+                {
+}
+            ).addTo(map_f327ac87b1daeb4f54161fd4e934f041);
+        
+    
+            var icon_7c15cda79c74c0c7ccc85f3e293cd770 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9163612f58980826988fbe2e5bd537d8 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_adf5dbe01aa14749f9abdfbab7ef2018 = $(`<div id="html_adf5dbe01aa14749f9abdfbab7ef2018" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001650579<br>                             <b>Nombre:</b> MORENO CARRERA DE GONZALES MARIA ELENA<br>                             <b>Dirección:</b> AV. MZA L, LOTE NRO. 12 URB. SANTA TERESA DE AVILA La Libertad-Trujillo-Trujillo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_9163612f58980826988fbe2e5bd537d8.setContent(html_adf5dbe01aa14749f9abdfbab7ef2018);
+            
+        
+
+        marker_0c0f36c6a5c00cdca19575885e2a4b2f.bindPopup(popup_9163612f58980826988fbe2e5bd537d8)
+        ;
+
+        
+    
+    
+                marker_0c0f36c6a5c00cdca19575885e2a4b2f.setIcon(icon_7c15cda79c74c0c7ccc85f3e293cd770);
+            
+    
+            var marker_18d969b233c3a7743fc4889256f0cda5 = L.marker(
+                [-8.092832, -79.0152724],
+                {
+}
+            ).addTo(map_f327ac87b1daeb4f54161fd4e934f041);
+        
+    
+            var icon_2e190c501700a213b626a895dd2b91fc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8258aa945470f1a0767c987c315e6c63 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_8e9f5503910cddf083183f5f75d95ff9 = $(`<div id="html_8e9f5503910cddf083183f5f75d95ff9" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001546911<br>                             <b>Nombre:</b> MORI MARIN JOSMELL ALEJANDRO<br>                             <b>Dirección:</b> SECT. SANTA TERESA DE AVILA INT LO MZA. E LOTE. 8 URB. URB SANTA TERESA DE AVILA La Libertad-Trujillo-Trujillo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_8258aa945470f1a0767c987c315e6c63.setContent(html_8e9f5503910cddf083183f5f75d95ff9);
+            
+        
+
+        marker_18d969b233c3a7743fc4889256f0cda5.bindPopup(popup_8258aa945470f1a0767c987c315e6c63)
+        ;
+
+        
+    
+    
+                marker_18d969b233c3a7743fc4889256f0cda5.setIcon(icon_2e190c501700a213b626a895dd2b91fc);
+            
+    
+            var marker_e0453d266ccbcf2dfefb32abe3c8182b = L.marker(
+                [-8.0958393, -79.008697],
+                {
+}
+            ).addTo(map_f327ac87b1daeb4f54161fd4e934f041);
+        
+    
+            var icon_3b384d0b05487fad9224db601e927ab4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_498e4564f84a33eec6a23d1963751bb8 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_6a68d081219f678ab9eb455c0ae27ab8 = $(`<div id="html_6a68d081219f678ab9eb455c0ae27ab8" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001447506<br>                             <b>Nombre:</b> RODRIGUEZ AVILA ROSA ISABEL<br>                             <b>Dirección:</b> MZA C LOTE NRO. 1 URB. EL HUERTO La Libertad-Trujillo-Trujillo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_498e4564f84a33eec6a23d1963751bb8.setContent(html_6a68d081219f678ab9eb455c0ae27ab8);
+            
+        
+
+        marker_e0453d266ccbcf2dfefb32abe3c8182b.bindPopup(popup_498e4564f84a33eec6a23d1963751bb8)
+        ;
+
+        
+    
+    
+                marker_e0453d266ccbcf2dfefb32abe3c8182b.setIcon(icon_3b384d0b05487fad9224db601e927ab4);
+            
+    
+            var poly_line_0a130a679b3910dbd33e437da5baf391 = L.polyline(
+                [[-8.100042, -79.0194473], [-8.0994018, -79.0200885], [-8.0967718, -79.0215532], [-8.0973254, -79.0255189], [-8.0930521, -79.0251658], [-8.0928835, -79.0249268], [-8.0926266, -79.0258085], [-8.0924145, -79.0259289], [-8.091899, -79.0258478], [-8.0914704, -79.0261364], [-8.0914694, -79.0262025], [-8.0913725, -79.0256912], [-8.0910386, -79.0258431], [-8.0909051, -79.0256479], [-8.0903434, -79.0251534], [-8.0958951, -79.0170202], [-8.096401, -79.0138217], [-8.0962868, -79.0131059], [-8.0953322, -79.0125614], [-8.0930043, -79.0111576], [-8.0921117, -79.0122932], [-8.0920935, -79.0123495], [-8.091638, -79.011653], [-8.09092, -79.0147269], [-8.0904646, -79.0149241], [-8.092832, -79.0152724], [-8.0958393, -79.008697]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.85, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_f327ac87b1daeb4f54161fd4e934f041);
+        
+</script>
+</html>
