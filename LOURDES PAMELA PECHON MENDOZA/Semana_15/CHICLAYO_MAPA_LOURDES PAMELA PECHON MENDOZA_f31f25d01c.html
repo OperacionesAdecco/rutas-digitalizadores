@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_42480675e16c905010316b075c44aca6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+                <div style="
+                    position: fixed;
+                    top: 20px;
+                    right: 20px;
+                    z-index: 9999;
+                    background: white;
+                    padding: 10px 14px;
+                    border-radius: 8px;
+                    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+                    font-size: 13px;
+                ">
+                    <b>Resumen de Ruta</b><br>
+                    Total clientes: 27<br>
+                    <span style="color: orange;"><b>Por graduar:</b> 0</span>
+                </div>
+                
+    
+            <div class="folium-map" id="map_42480675e16c905010316b075c44aca6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_42480675e16c905010316b075c44aca6 = L.map(
+                "map_42480675e16c905010316b075c44aca6",
+                {
+                    center: [-6.765032, -79.875989],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4511a339468b14e5c4e2b90270bce36e = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "\u00a9 OpenStreetMap contributors \u00a9 CARTO",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4511a339468b14e5c4e2b90270bce36e.addTo(map_42480675e16c905010316b075c44aca6);
+        
+    
+            var marker_42a94dd43fb23cc6c56ab09a2cfebb41 = L.marker(
+                [-6.765032, -79.875989],
+                {
+}
+            ).addTo(map_42480675e16c905010316b075c44aca6);
+        
+    
+            var icon_9195ab76b14144a45736670567edf6fb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6f0791945fd0141b141eac7d5f78cb3b = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_755e5cdf080912a5a14f60f86cd43e10 = $(`<div id="html_755e5cdf080912a5a14f60f86cd43e10" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001732123<br>                             <b>Nombre:</b> CARRERA VASQUEZ RUTH MAGALI<br>                             <b>Dirección:</b> CL. JUAN PABLO II NRO. 189 URB. CRUZ DE LA ESPERANZA Lambayeque-Chiclayo-Chiclayo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_6f0791945fd0141b141eac7d5f78cb3b.setContent(html_755e5cdf080912a5a14f60f86cd43e10);
+            
+        
+
+        marker_42a94dd43fb23cc6c56ab09a2cfebb41.bindPopup(popup_6f0791945fd0141b141eac7d5f78cb3b)
+        ;
+
+        
+    
+    
+                marker_42a94dd43fb23cc6c56ab09a2cfebb41.setIcon(icon_9195ab76b14144a45736670567edf6fb);
+            
+    
+            var marker_b25ac8f636450dd83cf3b18e71774ae1 = L.marker(
+                [-6.7659714, -79.8756085],
+                {
+}
+            ).addTo(map_42480675e16c905010316b075c44aca6);
+        
+    
+            var icon_d7128efb785fc2e80b5548fb08931632 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3e7903140d2d69cfcab7a86a3ba4ff56 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_b61aa167bf7a9f7d8295e1835cf2431d = $(`<div id="html_b61aa167bf7a9f7d8295e1835cf2431d" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C004161974<br>                             <b>Nombre:</b> DIAZ VILLALOBOS JAQUILINE<br>                             <b>Dirección:</b> San Antonio de Padua 125, cruz de la esperanza<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_3e7903140d2d69cfcab7a86a3ba4ff56.setContent(html_b61aa167bf7a9f7d8295e1835cf2431d);
+            
+        
+
+        marker_b25ac8f636450dd83cf3b18e71774ae1.bindPopup(popup_3e7903140d2d69cfcab7a86a3ba4ff56)
+        ;
+
+        
+    
+    
+                marker_b25ac8f636450dd83cf3b18e71774ae1.setIcon(icon_d7128efb785fc2e80b5548fb08931632);
+            
+    
+            var marker_efdff6d149be5955661b046148020e5b = L.marker(
+                [-6.7709265, -79.8747283],
+                {
+}
+            ).addTo(map_42480675e16c905010316b075c44aca6);
+        
+    
+            var icon_92fd156d03c415f83a1ce52c4a8a4706 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_79fae2515158fab68d4c3b1f37b29457 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_f975f2f1819fabc16576594118946da1 = $(`<div id="html_f975f2f1819fabc16576594118946da1" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001765858<br>                             <b>Nombre:</b> RODRIGUEZ CARRASCO ALICIA<br>                             <b>Dirección:</b> CL. ISABEL LA CATÓLICA NRO. 897 URB. CRUZ DE LA ESPERANZA Lambayeque-Chiclayo-Chiclayo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_79fae2515158fab68d4c3b1f37b29457.setContent(html_f975f2f1819fabc16576594118946da1);
+            
+        
+
+        marker_efdff6d149be5955661b046148020e5b.bindPopup(popup_79fae2515158fab68d4c3b1f37b29457)
+        ;
+
+        
+    
+    
+                marker_efdff6d149be5955661b046148020e5b.setIcon(icon_92fd156d03c415f83a1ce52c4a8a4706);
+            
+    
+            var marker_66463ad939582e494a7c7683d43c6269 = L.marker(
+                [-6.772214, -79.8743435],
+                {
+}
+            ).addTo(map_42480675e16c905010316b075c44aca6);
+        
+    
+            var icon_01256dcfbc3ef97d079582dfc18e5f6f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ee5535e823ded3f9b87db32e55d472f2 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_07a4f119afce5a01b197dd37f6ec9433 = $(`<div id="html_07a4f119afce5a01b197dd37f6ec9433" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C004095596<br>                             <b>Nombre:</b> HERAS CORAL JUAN JULIO<br>                             <b>Dirección:</b> calle Belaunde 091<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_ee5535e823ded3f9b87db32e55d472f2.setContent(html_07a4f119afce5a01b197dd37f6ec9433);
+            
+        
+
+        marker_66463ad939582e494a7c7683d43c6269.bindPopup(popup_ee5535e823ded3f9b87db32e55d472f2)
+        ;
+
+        
+    
+    
+                marker_66463ad939582e494a7c7683d43c6269.setIcon(icon_01256dcfbc3ef97d079582dfc18e5f6f);
+            
+    
+            var marker_4fdc235caa733eca3608cdb965de99d6 = L.marker(
+                [-6.7718541, -79.8723103],
+                {
+}
+            ).addTo(map_42480675e16c905010316b075c44aca6);
+        
+    
+            var icon_37fe8c14ca1ba98f4db409c3815ca785 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_57b5f49a359ebdc40377048c95aaa923 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_3831516ed66cd4830d048eba70e8479f = $(`<div id="html_3831516ed66cd4830d048eba70e8479f" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001165732<br>                             <b>Nombre:</b> ALVAREZ SALAZAR BERTHA<br>                             <b>Dirección:</b> CL. LAS CAUTIVAS NRO. 164 Lambayeque-Chiclayo-Chiclayo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_57b5f49a359ebdc40377048c95aaa923.setContent(html_3831516ed66cd4830d048eba70e8479f);
+            
+        
+
+        marker_4fdc235caa733eca3608cdb965de99d6.bindPopup(popup_57b5f49a359ebdc40377048c95aaa923)
+        ;
+
+        
+    
+    
+                marker_4fdc235caa733eca3608cdb965de99d6.setIcon(icon_37fe8c14ca1ba98f4db409c3815ca785);
+            
+    
+            var marker_5b44f2b9107908633657becc3dd2f6e6 = L.marker(
+                [-6.774185, -79.8769624],
+                {
+}
+            ).addTo(map_42480675e16c905010316b075c44aca6);
+        
+    
+            var icon_e549aa29d3f605a14ed2bf85d6cd7cdc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_43619c2a5ec7419b7b97831348567bbd = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_dc2a5a463f96469ae168324bc7f50a1a = $(`<div id="html_dc2a5a463f96469ae168324bc7f50a1a" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C004065982<br>                             <b>Nombre:</b> GONGORA RUIZ ROSA LILIANA<br>                             <b>Dirección:</b> los condominios los parques de san Gabriel torre 25 dparto 103<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_43619c2a5ec7419b7b97831348567bbd.setContent(html_dc2a5a463f96469ae168324bc7f50a1a);
+            
+        
+
+        marker_5b44f2b9107908633657becc3dd2f6e6.bindPopup(popup_43619c2a5ec7419b7b97831348567bbd)
+        ;
+
+        
+    
+    
+                marker_5b44f2b9107908633657becc3dd2f6e6.setIcon(icon_e549aa29d3f605a14ed2bf85d6cd7cdc);
+            
+    
+            var marker_3cc94f60f5677c3ccaa71cb69ff6d051 = L.marker(
+                [-6.783659, -79.877362],
+                {
+}
+            ).addTo(map_42480675e16c905010316b075c44aca6);
+        
+    
+            var icon_7667db9a682a47b00513bb0845bd21a7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d57447078fcfed7f59b74040b7a81054 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_27d58999f2af71d93ef5b3de265494a4 = $(`<div id="html_27d58999f2af71d93ef5b3de265494a4" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001740914<br>                             <b>Nombre:</b> ABANTO CHAVEZ MARTHA<br>                             <b>Dirección:</b> MZA. D LOTE. 9 URB. RICARDO ARIZONA Lambayeque-Chiclayo-Chiclayo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_d57447078fcfed7f59b74040b7a81054.setContent(html_27d58999f2af71d93ef5b3de265494a4);
+            
+        
+
+        marker_3cc94f60f5677c3ccaa71cb69ff6d051.bindPopup(popup_d57447078fcfed7f59b74040b7a81054)
+        ;
+
+        
+    
+    
+                marker_3cc94f60f5677c3ccaa71cb69ff6d051.setIcon(icon_7667db9a682a47b00513bb0845bd21a7);
+            
+    
+            var marker_890719dc82a6dfecbd228898c06ce3c3 = L.marker(
+                [-6.783724, -79.87714],
+                {
+}
+            ).addTo(map_42480675e16c905010316b075c44aca6);
+        
+    
+            var icon_0dca5db04ef499e928c83a8eaab9145d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d28ab056c4c4f7ef41570ed646d50596 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_1e028e5fdef70c58e9a55061d6da0467 = $(`<div id="html_1e028e5fdef70c58e9a55061d6da0467" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001740915<br>                             <b>Nombre:</b> VASQUEZ MONTAÑO JUSSARA LILIANA<br>                             <b>Dirección:</b> MZA. J LOTE. 15 URB. NUEVO PROGRESO Lambayeque-Chiclayo-Chiclayo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_d28ab056c4c4f7ef41570ed646d50596.setContent(html_1e028e5fdef70c58e9a55061d6da0467);
+            
+        
+
+        marker_890719dc82a6dfecbd228898c06ce3c3.bindPopup(popup_d28ab056c4c4f7ef41570ed646d50596)
+        ;
+
+        
+    
+    
+                marker_890719dc82a6dfecbd228898c06ce3c3.setIcon(icon_0dca5db04ef499e928c83a8eaab9145d);
+            
+    
+            var marker_3d98ff415491b69ff909a8fb70f9aa39 = L.marker(
+                [-6.786318, -79.8742713],
+                {
+}
+            ).addTo(map_42480675e16c905010316b075c44aca6);
+        
+    
+            var icon_d17ea682d616ec8636e2cc7425b205ff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_46ed487130d82533c65a861fcfa951f5 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_1607103bbe167302b377aafe0ad74f57 = $(`<div id="html_1607103bbe167302b377aafe0ad74f57" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001733649<br>                             <b>Nombre:</b> YNOÑAN PERLECHE MARIA HAYDEE<br>                             <b>Dirección:</b> AV. MZA. L LOTE. 11 URB. LA MOLINA ALTA Lambayeque-Chiclayo-Chiclayo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_46ed487130d82533c65a861fcfa951f5.setContent(html_1607103bbe167302b377aafe0ad74f57);
+            
+        
+
+        marker_3d98ff415491b69ff909a8fb70f9aa39.bindPopup(popup_46ed487130d82533c65a861fcfa951f5)
+        ;
+
+        
+    
+    
+                marker_3d98ff415491b69ff909a8fb70f9aa39.setIcon(icon_d17ea682d616ec8636e2cc7425b205ff);
+            
+    
+            var marker_17b955263efe6b332b985d7d2e30e6a1 = L.marker(
+                [-6.78599, -79.8731197],
+                {
+}
+            ).addTo(map_42480675e16c905010316b075c44aca6);
+        
+    
+            var icon_3047244fe6dc485521743f6dc60df80b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bb9394a86d0af649c8befafc6aa32c14 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_1d1f2d49139bb8589de152fd5453ec29 = $(`<div id="html_1d1f2d49139bb8589de152fd5453ec29" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001420402<br>                             <b>Nombre:</b> MACHADO CHANTA GLORIA ESPERANZA<br>                             <b>Dirección:</b> MOLINA ALTA MZA. E LOTE. 12 Lambayeque-Chiclayo-Chiclayo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_bb9394a86d0af649c8befafc6aa32c14.setContent(html_1d1f2d49139bb8589de152fd5453ec29);
+            
+        
+
+        marker_17b955263efe6b332b985d7d2e30e6a1.bindPopup(popup_bb9394a86d0af649c8befafc6aa32c14)
+        ;
+
+        
+    
+    
+                marker_17b955263efe6b332b985d7d2e30e6a1.setIcon(icon_3047244fe6dc485521743f6dc60df80b);
+            
+    
+            var marker_fed5f57945cd3a9ac7785caaf9922153 = L.marker(
+                [-6.78641, -79.873],
+                {
+}
+            ).addTo(map_42480675e16c905010316b075c44aca6);
+        
+    
+            var icon_6dbb8bac2df51b47230338cea9aa2460 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_15c6015a66c40defcf99629e6233bd27 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_520db48fc2de5abeb2a1be3fbe71a912 = $(`<div id="html_520db48fc2de5abeb2a1be3fbe71a912" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001335675<br>                             <b>Nombre:</b> FLORES CARDOZO MARIA RAQUEL<br>                             <b>Dirección:</b> MZA. C LOTE. 12 URB. MOLINA ALTA Lambayeque-Chiclayo-Chiclayo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_15c6015a66c40defcf99629e6233bd27.setContent(html_520db48fc2de5abeb2a1be3fbe71a912);
+            
+        
+
+        marker_fed5f57945cd3a9ac7785caaf9922153.bindPopup(popup_15c6015a66c40defcf99629e6233bd27)
+        ;
+
+        
+    
+    
+                marker_fed5f57945cd3a9ac7785caaf9922153.setIcon(icon_6dbb8bac2df51b47230338cea9aa2460);
+            
+    
+            var marker_e27f031f39a0ee7df804bd9b4b874656 = L.marker(
+                [-6.787046, -79.871115],
+                {
+}
+            ).addTo(map_42480675e16c905010316b075c44aca6);
+        
+    
+            var icon_a5229d7995804c70893c7cf54a071a4d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1c83351f696ef59f8684fe59dd038da0 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_e98976995345cba4767e058a212a096b = $(`<div id="html_e98976995345cba4767e058a212a096b" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001735017<br>                             <b>Nombre:</b> PERALTA PEREZ MARIA SIRA<br>                             <b>Dirección:</b> CL. UNIVERSITARIA MZA. D LOTE. 8 URB. CERROPON Lambayeque-Chiclayo-Chiclayo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_1c83351f696ef59f8684fe59dd038da0.setContent(html_e98976995345cba4767e058a212a096b);
+            
+        
+
+        marker_e27f031f39a0ee7df804bd9b4b874656.bindPopup(popup_1c83351f696ef59f8684fe59dd038da0)
+        ;
+
+        
+    
+    
+                marker_e27f031f39a0ee7df804bd9b4b874656.setIcon(icon_a5229d7995804c70893c7cf54a071a4d);
+            
+    
+            var marker_b8450125d89f7ab07ea427e64dfd7a6e = L.marker(
+                [-6.7862474, -79.8675031],
+                {
+}
+            ).addTo(map_42480675e16c905010316b075c44aca6);
+        
+    
+            var icon_f631ac82edccaee2711b0ea2d455861f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_25f86392874658b2642f1faa093bf17d = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_b35d0cf06972f130f875a7a127315c44 = $(`<div id="html_b35d0cf06972f130f875a7a127315c44" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001669795<br>                             <b>Nombre:</b> FERNANDEZ REQUEJO AYDET<br>                             <b>Dirección:</b> CL. VICTOR SANCHEZ INT. 4 MZA. 36 URB. LAS BRISAS Lambayeque-Chiclayo-Chiclayo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_25f86392874658b2642f1faa093bf17d.setContent(html_b35d0cf06972f130f875a7a127315c44);
+            
+        
+
+        marker_b8450125d89f7ab07ea427e64dfd7a6e.bindPopup(popup_25f86392874658b2642f1faa093bf17d)
+        ;
+
+        
+    
+    
+                marker_b8450125d89f7ab07ea427e64dfd7a6e.setIcon(icon_f631ac82edccaee2711b0ea2d455861f);
+            
+    
+            var marker_4184dec15a785ced685b21ab2cd3f3b8 = L.marker(
+                [-6.784988, -79.8663957],
+                {
+}
+            ).addTo(map_42480675e16c905010316b075c44aca6);
+        
+    
+            var icon_e217c559dba33c0e343c5808ce393baa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0a2489f20f073817dc326c823d3331ce = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_3593ac93a41894b9cfc2b0835ac66667 = $(`<div id="html_3593ac93a41894b9cfc2b0835ac66667" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001402188<br>                             <b>Nombre:</b> VIDAURRE COLLAZOS JENNY DAYSI<br>                             <b>Dirección:</b> CL. AGUSTIN VALLEJOS NRO. 875 URB. LAS BRISAS Lambayeque-Chiclayo-Chiclayo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_0a2489f20f073817dc326c823d3331ce.setContent(html_3593ac93a41894b9cfc2b0835ac66667);
+            
+        
+
+        marker_4184dec15a785ced685b21ab2cd3f3b8.bindPopup(popup_0a2489f20f073817dc326c823d3331ce)
+        ;
+
+        
+    
+    
+                marker_4184dec15a785ced685b21ab2cd3f3b8.setIcon(icon_e217c559dba33c0e343c5808ce393baa);
+            
+    
+            var marker_da373d15ee52c93a682fcf30e637dd45 = L.marker(
+                [-6.7842085, -79.8651401],
+                {
+}
+            ).addTo(map_42480675e16c905010316b075c44aca6);
+        
+    
+            var icon_f0841a0d4467eabbc1df51b2c890a3ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bc9530377eb2aaf183746956c4b5c627 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_5d8b8be746eaa348565e541847450b82 = $(`<div id="html_5d8b8be746eaa348565e541847450b82" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001704378<br>                             <b>Nombre:</b> SALCEDO CABEZUDO LOURDES JUANA<br>                             <b>Dirección:</b> CL. SAN PEDRO NRO. 137 Lambayeque-Chiclayo-Chiclayo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_bc9530377eb2aaf183746956c4b5c627.setContent(html_5d8b8be746eaa348565e541847450b82);
+            
+        
+
+        marker_da373d15ee52c93a682fcf30e637dd45.bindPopup(popup_bc9530377eb2aaf183746956c4b5c627)
+        ;
+
+        
+    
+    
+                marker_da373d15ee52c93a682fcf30e637dd45.setIcon(icon_f0841a0d4467eabbc1df51b2c890a3ef);
+            
+    
+            var marker_7b35dfe65f0d5cb5b065675cf755d09d = L.marker(
+                [-6.7832168, -79.8627935],
+                {
+}
+            ).addTo(map_42480675e16c905010316b075c44aca6);
+        
+    
+            var icon_b88dcbba5002d43da6b17562ae6bd05d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_40f7fcc8f6cb064e8c978e4f699a810e = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_1e43c29c3e03d5f2b53e9686dd16b7d6 = $(`<div id="html_1e43c29c3e03d5f2b53e9686dd16b7d6" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001335190<br>                             <b>Nombre:</b> MILLONES CALDERON MARIA ISABEL<br>                             <b>Dirección:</b> AV. PEDRO CIEZA DE LEON MZA. B LOTE. 07 Lambayeque-Chiclayo-Chiclayo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_40f7fcc8f6cb064e8c978e4f699a810e.setContent(html_1e43c29c3e03d5f2b53e9686dd16b7d6);
+            
+        
+
+        marker_7b35dfe65f0d5cb5b065675cf755d09d.bindPopup(popup_40f7fcc8f6cb064e8c978e4f699a810e)
+        ;
+
+        
+    
+    
+                marker_7b35dfe65f0d5cb5b065675cf755d09d.setIcon(icon_b88dcbba5002d43da6b17562ae6bd05d);
+            
+    
+            var marker_5e9b1ab9bafbd5abd85c36dfd51d4335 = L.marker(
+                [-6.7812225, -79.8671742],
+                {
+}
+            ).addTo(map_42480675e16c905010316b075c44aca6);
+        
+    
+            var icon_b3e7eab53595c978d89221f35c43fbb0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fa08ad09922cedccfdbf7a6bdead2b6a = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_c8526f3d67dda20dd26a80d382b4f0f6 = $(`<div id="html_c8526f3d67dda20dd26a80d382b4f0f6" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001747662<br>                             <b>Nombre:</b> LIMO CHAVEZ MARTIN OMAR<br>                             <b>Dirección:</b> CL. JUAN PABLO NRO. 618 URB. LAS BRISAS Lambayeque-Chiclayo-Chiclayo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_fa08ad09922cedccfdbf7a6bdead2b6a.setContent(html_c8526f3d67dda20dd26a80d382b4f0f6);
+            
+        
+
+        marker_5e9b1ab9bafbd5abd85c36dfd51d4335.bindPopup(popup_fa08ad09922cedccfdbf7a6bdead2b6a)
+        ;
+
+        
+    
+    
+                marker_5e9b1ab9bafbd5abd85c36dfd51d4335.setIcon(icon_b3e7eab53595c978d89221f35c43fbb0);
+            
+    
+            var marker_174cee1ef5ad1ab72f2d596911f5285a = L.marker(
+                [-6.7798279, -79.8678609],
+                {
+}
+            ).addTo(map_42480675e16c905010316b075c44aca6);
+        
+    
+            var icon_ac4f0e4faf13fbb5b049fb987531c7c6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2531aa90513eb47f7cc5c6bcbf5204d6 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_fcd74b8552f09e35ef64fdc72006de35 = $(`<div id="html_fcd74b8552f09e35ef64fdc72006de35" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001075708<br>                             <b>Nombre:</b> CUEVA DE ESTRADA GENARA<br>                             <b>Dirección:</b> JR. CAL SANTA INES N611 NRO. 611 MZA. MAZAA310 URB. URB LAS BRISAS Lambayeque-Chiclayo-Chiclayo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_2531aa90513eb47f7cc5c6bcbf5204d6.setContent(html_fcd74b8552f09e35ef64fdc72006de35);
+            
+        
+
+        marker_174cee1ef5ad1ab72f2d596911f5285a.bindPopup(popup_2531aa90513eb47f7cc5c6bcbf5204d6)
+        ;
+
+        
+    
+    
+                marker_174cee1ef5ad1ab72f2d596911f5285a.setIcon(icon_ac4f0e4faf13fbb5b049fb987531c7c6);
+            
+    
+            var marker_c7875d8a20c4d82ee50682225760f0e2 = L.marker(
+                [-6.7805493, -79.8538916],
+                {
+}
+            ).addTo(map_42480675e16c905010316b075c44aca6);
+        
+    
+            var icon_12ebeff0450af3ebb517e91429500e61 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_48248823c6d5907018facd4e36b0c06b = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_95767d43178e52416ac50d356a243639 = $(`<div id="html_95767d43178e52416ac50d356a243639" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001309059<br>                             <b>Nombre:</b> GIL MIL ZORAIDA MARIBEL<br>                             <b>Dirección:</b> MZA. K LOTE. 26 URB. PJ PASTOR BOGIANO Lambayeque-Chiclayo-Chiclayo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_48248823c6d5907018facd4e36b0c06b.setContent(html_95767d43178e52416ac50d356a243639);
+            
+        
+
+        marker_c7875d8a20c4d82ee50682225760f0e2.bindPopup(popup_48248823c6d5907018facd4e36b0c06b)
+        ;
+
+        
+    
+    
+                marker_c7875d8a20c4d82ee50682225760f0e2.setIcon(icon_12ebeff0450af3ebb517e91429500e61);
+            
+    
+            var marker_a2cdfb1e9a043e4c01944490c7513974 = L.marker(
+                [-6.7801811, -79.8528901],
+                {
+}
+            ).addTo(map_42480675e16c905010316b075c44aca6);
+        
+    
+            var icon_626f4d2608f18dab9e3b2560520e1251 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d6cea6ff023a5489bf5b28f88ca1d072 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_58d75224413b5de10e907be8fbef2b50 = $(`<div id="html_58d75224413b5de10e907be8fbef2b50" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001309058<br>                             <b>Nombre:</b> CABANILLAS PRADO ELIO ANTENOR<br>                             <b>Dirección:</b> PJE. PJ PASTOR BOGIANO NRO. 10 MZA. F LOTE. 10 URB. PJ PASTOR BOGIANO Lambayeque-Chiclayo-Chiclayo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_d6cea6ff023a5489bf5b28f88ca1d072.setContent(html_58d75224413b5de10e907be8fbef2b50);
+            
+        
+
+        marker_a2cdfb1e9a043e4c01944490c7513974.bindPopup(popup_d6cea6ff023a5489bf5b28f88ca1d072)
+        ;
+
+        
+    
+    
+                marker_a2cdfb1e9a043e4c01944490c7513974.setIcon(icon_626f4d2608f18dab9e3b2560520e1251);
+            
+    
+            var marker_de9729c5e8fb5d14b182c8460d96cb89 = L.marker(
+                [-6.7833273, -79.8539103],
+                {
+}
+            ).addTo(map_42480675e16c905010316b075c44aca6);
+        
+    
+            var icon_e0c286414a07eefa2727343671cf838d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_afa2bef254ffebe207064ed65e9ebfff = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_a62cc9d1a5899c0a4d5c6cd400dfc2dd = $(`<div id="html_a62cc9d1a5899c0a4d5c6cd400dfc2dd" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001705945<br>                             <b>Nombre:</b> PEREZ RAFAEL JOSELITO<br>                             <b>Dirección:</b> AV. COLECTORA MZA. A LOTE. 10 URB. VILLA DEL NORTE Lambayeque-Chiclayo-Chiclayo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_afa2bef254ffebe207064ed65e9ebfff.setContent(html_a62cc9d1a5899c0a4d5c6cd400dfc2dd);
+            
+        
+
+        marker_de9729c5e8fb5d14b182c8460d96cb89.bindPopup(popup_afa2bef254ffebe207064ed65e9ebfff)
+        ;
+
+        
+    
+    
+                marker_de9729c5e8fb5d14b182c8460d96cb89.setIcon(icon_e0c286414a07eefa2727343671cf838d);
+            
+    
+            var marker_9b2d2ab52e413e12c850b76d1c0980a2 = L.marker(
+                [-6.7857686, -79.8500483],
+                {
+}
+            ).addTo(map_42480675e16c905010316b075c44aca6);
+        
+    
+            var icon_293dcc5895ac6d013b29385fb6dc0eba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c4a1c2c365523e77519c811b0a7faef1 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_7bfa4cbd915164f708a6d20c7aba2bc4 = $(`<div id="html_7bfa4cbd915164f708a6d20c7aba2bc4" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C004163948<br>                             <b>Nombre:</b> CYMCORP S.A.C.<br>                             <b>Dirección:</b> CAL. LAS DELICIAS NRO. 305 URB. LA FLORIDA ET. UNO<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_c4a1c2c365523e77519c811b0a7faef1.setContent(html_7bfa4cbd915164f708a6d20c7aba2bc4);
+            
+        
+
+        marker_9b2d2ab52e413e12c850b76d1c0980a2.bindPopup(popup_c4a1c2c365523e77519c811b0a7faef1)
+        ;
+
+        
+    
+    
+                marker_9b2d2ab52e413e12c850b76d1c0980a2.setIcon(icon_293dcc5895ac6d013b29385fb6dc0eba);
+            
+    
+            var marker_b2deccb429d86270d82d5b7e5eb5026f = L.marker(
+                [-6.7850955, -79.8483746],
+                {
+}
+            ).addTo(map_42480675e16c905010316b075c44aca6);
+        
+    
+            var icon_aaa541a1e32237ebc02ce72d2202bc52 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_976f6eab953de3a8dfd4623271dc52ea = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_bc70052f2ccc1808769e6960ba7315ea = $(`<div id="html_bc70052f2ccc1808769e6960ba7315ea" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001084234<br>                             <b>Nombre:</b> CABREJOS BANCAYAN JESUS ALBERTO<br>                             <b>Dirección:</b> CL. LAS ROSAS NRO. 203 URB. URB LAS DELICIAS Lambayeque-Chiclayo-Chiclayo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_976f6eab953de3a8dfd4623271dc52ea.setContent(html_bc70052f2ccc1808769e6960ba7315ea);
+            
+        
+
+        marker_b2deccb429d86270d82d5b7e5eb5026f.bindPopup(popup_976f6eab953de3a8dfd4623271dc52ea)
+        ;
+
+        
+    
+    
+                marker_b2deccb429d86270d82d5b7e5eb5026f.setIcon(icon_aaa541a1e32237ebc02ce72d2202bc52);
+            
+    
+            var marker_e1ce44fd4332242c09c5d8a7930dccde = L.marker(
+                [-6.7838324, -79.8478711],
+                {
+}
+            ).addTo(map_42480675e16c905010316b075c44aca6);
+        
+    
+            var icon_5369f86bfe1b80e742478a0d5666be40 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2e987227d91bc07b45c115a669b9c9ac = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_778c2be01e710a00b8592cef7efad4da = $(`<div id="html_778c2be01e710a00b8592cef7efad4da" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C004142874<br>                             <b>Nombre:</b> RODAS ALCANTARA ZUZETY FIORELA<br>                             <b>Dirección:</b> Prolongacion Pacasmayo 418<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_2e987227d91bc07b45c115a669b9c9ac.setContent(html_778c2be01e710a00b8592cef7efad4da);
+            
+        
+
+        marker_e1ce44fd4332242c09c5d8a7930dccde.bindPopup(popup_2e987227d91bc07b45c115a669b9c9ac)
+        ;
+
+        
+    
+    
+                marker_e1ce44fd4332242c09c5d8a7930dccde.setIcon(icon_5369f86bfe1b80e742478a0d5666be40);
+            
+    
+            var marker_4b5f4f9af764f28474095cf3769f22a3 = L.marker(
+                [-6.779973, -79.847087],
+                {
+}
+            ).addTo(map_42480675e16c905010316b075c44aca6);
+        
+    
+            var icon_76e35642bbd9bbeaa25584e91766274d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_df1aceab790e6272e1c75879aafa0ccf = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_3feb5925d2f51e27520d189bc84837e8 = $(`<div id="html_3feb5925d2f51e27520d189bc84837e8" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C004168180<br>                             <b>Nombre:</b> TOCTO ABARCA IDELSA<br>                             <b>Dirección:</b> Garcilazo De La Vega 909<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_df1aceab790e6272e1c75879aafa0ccf.setContent(html_3feb5925d2f51e27520d189bc84837e8);
+            
+        
+
+        marker_4b5f4f9af764f28474095cf3769f22a3.bindPopup(popup_df1aceab790e6272e1c75879aafa0ccf)
+        ;
+
+        
+    
+    
+                marker_4b5f4f9af764f28474095cf3769f22a3.setIcon(icon_76e35642bbd9bbeaa25584e91766274d);
+            
+    
+            var marker_2550799853b10256601eda6323f7bcf3 = L.marker(
+                [-6.7782478, -79.845676],
+                {
+}
+            ).addTo(map_42480675e16c905010316b075c44aca6);
+        
+    
+            var icon_6cf4ab92e228da0839cbf26a3d9e578b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7f1eb7600f51e4b73f9caed43b7d21f4 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_6819c78c1a433704583605981470f3b1 = $(`<div id="html_6819c78c1a433704583605981470f3b1" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001731679<br>                             <b>Nombre:</b> BRAVO CRUZ JENNY<br>                             <b>Dirección:</b> AV. LAS AMERICAS NRO. 448 URB. SAN NICOLAS Lambayeque-Chiclayo-Chiclayo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_7f1eb7600f51e4b73f9caed43b7d21f4.setContent(html_6819c78c1a433704583605981470f3b1);
+            
+        
+
+        marker_2550799853b10256601eda6323f7bcf3.bindPopup(popup_7f1eb7600f51e4b73f9caed43b7d21f4)
+        ;
+
+        
+    
+    
+                marker_2550799853b10256601eda6323f7bcf3.setIcon(icon_6cf4ab92e228da0839cbf26a3d9e578b);
+            
+    
+            var marker_b89706dba3d571ba71f2263f37c51d76 = L.marker(
+                [-6.7787258, -79.8490197],
+                {
+}
+            ).addTo(map_42480675e16c905010316b075c44aca6);
+        
+    
+            var icon_0df026a93c8eba209b02a9a619e45e9e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8982315dff4519e17a45c9f8e3c0ca32 = L.popup({
+  "maxWidth": 320,
+});
+
+        
+            
+                var html_ccc82b034c59185d76542160a354b13b = $(`<div id="html_ccc82b034c59185d76542160a354b13b" style="width: 100.0%; height: 100.0%;">                         <div style="font-size:13px;">                             <b>Cod Cliente:</b> C001735043<br>                             <b>Nombre:</b> MENDOZA ORDOÑEZ DELINA<br>                             <b>Dirección:</b> CL. LA ESPERANZA NRO. 260 URB. UPIS SEÑOR DE LOS MILAGROS Lambayeque-Chiclayo-Chiclayo<br>                             <b>Estatus:</b> -                         </div>                         </div>`)[0];
+                popup_8982315dff4519e17a45c9f8e3c0ca32.setContent(html_ccc82b034c59185d76542160a354b13b);
+            
+        
+
+        marker_b89706dba3d571ba71f2263f37c51d76.bindPopup(popup_8982315dff4519e17a45c9f8e3c0ca32)
+        ;
+
+        
+    
+    
+                marker_b89706dba3d571ba71f2263f37c51d76.setIcon(icon_0df026a93c8eba209b02a9a619e45e9e);
+            
+    
+            var poly_line_25606f2298f157b7b8496436aac51e3d = L.polyline(
+                [[-6.765032, -79.875989], [-6.7659714, -79.8756085], [-6.7709265, -79.8747283], [-6.772214, -79.8743435], [-6.7718541, -79.8723103], [-6.774185, -79.8769624], [-6.783659, -79.877362], [-6.783724, -79.87714], [-6.786318, -79.8742713], [-6.78599, -79.8731197], [-6.78641, -79.873], [-6.787046, -79.871115], [-6.7862474, -79.8675031], [-6.784988, -79.8663957], [-6.7842085, -79.8651401], [-6.7832168, -79.8627935], [-6.7812225, -79.8671742], [-6.7798279, -79.8678609], [-6.7805493, -79.8538916], [-6.7801811, -79.8528901], [-6.7833273, -79.8539103], [-6.7857686, -79.8500483], [-6.7850955, -79.8483746], [-6.7838324, -79.8478711], [-6.779973, -79.847087], [-6.7782478, -79.845676], [-6.7787258, -79.8490197]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.85, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_42480675e16c905010316b075c44aca6);
+        
+</script>
+</html>
