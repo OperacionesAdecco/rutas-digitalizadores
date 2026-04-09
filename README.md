@@ -1,2 +1,2 @@
-# rutas-digitalizadores
+# Rutas Semanales
 Rutas semanales de Digitalizadores
